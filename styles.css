@@ -1,0 +1,309 @@
+/* -------------------- CSS BY Justin Rodriguez -------------------------------------- */
+
+/* -------------------- IMPORTED FONTS -------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/*-------------------- CSS RESET ---------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -------------------- ROOT VARIABLES --------------------------------------- */
+:root {
+--teal: #4CA7C0;
+--purple: #484FB7;
+--lavender: #6B8FE7;
+--yellow: #E9BB57;
+--pink: #D9526F;
+--dark-gray: #1E1E1E;
+--white: #ffffff;
+font-family: Inter;
+}
+
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+
+h1, h2 {
+    font-family: "Kavoon";
+}
+
+h1 {
+    font-size: 3em;
+    color: var(--white);
+    padding: 70px 0px 20px 0px;
+}
+
+nav h2 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--white);
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top:20px;
+    margin-left: 20px;
+    color: var(--yellow);
+}
+
+h4 {
+    font-weight: bold;
+    padding: 20px 0px 10px 0px;
+    font-size: 1.15em;
+    color: var(--purple);
+}
+
+p {
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+html {
+    background-color: var(--purple);
+}
+
+header {
+    background-color: var(--lavender);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+
+header p {     
+    position: absolute;  
+    transform: translate(-50%, -50%);
+    top: 12%;
+    left: 50%;  
+    padding: 20px 0px 10px 0px;
+    background-color: var(--pink);
+    color: var(--white);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 80%;
+    z-index: -2;
+    
+}
+
+#menu {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    color: var(--dark-gray);
+    background-color: var(--yellow);
+    font-family: Inter;
+    font-weight: bold;
+    font-style: italic;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#services {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.services {
+    background-color: var(--white);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.whychoose {
+    background-color: var(--pink);
+    padding: 20px;
+}
+
+.whychoose ul {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.why1 {
+    background-color: var(--teal);
+    padding: 40px;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.why2 {
+    background-color: var(--lavender);
+    padding: 40px;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.why3 {
+    background-color: var(--yellow);
+    padding: 40px;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.why4 {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+#pricing {
+    padding: 20px 0px 0px 20px;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.tablehead {
+    background-color: var(--yellow);
+    padding: 20px;
+    font-weight: bold;
+    border: 3px solid var(--yellow);
+}
+
+.tabledata {
+    background-color: var(--white);
+    padding: 20px;
+    border: 3px solid var(--yellow);
+}
+
+#firststep {
+    background-color: var(--pink);
+    padding: 20px;
+}
+
+#firststep p {
+    color: var(--white);
+    margin-top: 20px;
+}
+
+#schedule {
+    display: block;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--dark-gray);
+    background-color: var(--white);
+    font-weight: bold;
+    padding: 30px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px;
+}
+
+footer {
+    background-color: var(--lavender);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 40px;
+    padding: 60px;
+    color: var(--white);
+    border-radius: 0px 0px 20px 20px;
+    
+}
+
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media screen and (min-width: 620px) {
+
+
+
+.whychoose ul {
+    display: flex;
+    }
+
+
+#servicescontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}  
+    h3 {
+        grid-column: 1 / -1; /* Span the full width */
+        text-align: center;
+    }
+
+    #firststep {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
+@media screen and (min-width: 950px) {
+
+    #services {
+        display: inline-block;
+    }
+
+    #pricing {
+    display: flex;
+    flex-direction: row;
+}
+}
+
+/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+@media screen and (min-width: 1280px) {
+html {
+    margin: 100px;
+}
+}
